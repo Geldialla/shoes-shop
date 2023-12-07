@@ -207,8 +207,20 @@ section .main .button:hover i{
     opacity: 1;
 }
 
+.products .box .card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .products .box .card .image img{
     width: 150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.products .box .card:hover .image img{
+    transform: scale(1.1);
 }
 
 .products .box .card .small_card i{
@@ -224,4 +236,33 @@ section .main .button:hover i{
 
 .products .box .card .small_card i:hover{
     color: #c72092;
+}
+
+.products .box .card .product_text h2{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.products .box .card .product_text p{
+    color: #919191;
+    line-height: 21px;
+    margin: 8px 0;
+}
+
+.products .box .card .product_text h3{
+    margin: 7px 0;
+}
+
+.products .box .card .product_text .product_star {
+    color: orange;
+    margin-bottom: 19px;
+    cursor: pointer;
+}
+
+.products .box .card .product_text .btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    color: white;
+    border-radius: 5px;
 }
